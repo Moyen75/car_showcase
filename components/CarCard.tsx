@@ -57,7 +57,6 @@ function CarCard({ car }: CarCardProps) {
         </div>
       </div>
       <div>
-        <CustomButton title="showmore" />
       </div>
     </div>
   )

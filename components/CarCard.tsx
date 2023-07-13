@@ -6,8 +6,8 @@ import { calculateCarRent } from "@/utils";
 import { useState } from "react";
 import CustomButton from "./CustomButton";
 
-interface CarCardProps{
-  car:CarProps
+interface CarCardProps {
+  car: CarProps
 }
 function CarCard({ car }: CarCardProps) {
 
@@ -32,7 +32,7 @@ function CarCard({ car }: CarCardProps) {
         </span>
       </p>
       <div className="relative w-full h-40 my-3 object-contain">
-          <Image src="/hero.png" alt="hero car" fill priority className="object-contain" />
+        <Image src="/hero.png" alt="hero car" fill priority className="object-contain" />
       </div>
       <div className="relative flex w-full mt-2">
         <div className="flex group-hover:invisible w-full justify-between text-gray">
@@ -54,7 +54,10 @@ function CarCard({ car }: CarCardProps) {
               {city_mpg} MPG
             </p>
           </div>
-         </div>
+        </div>
+      </div>
+      <div>
+        <CustomButton title="showmore" />
       </div>
     </div>
   )
